@@ -1,0 +1,474 @@
+[debug] [2025-06-10T17:49:30.692Z] : 
+[debug] [2025-06-10T17:49:30.698Z] : ----------------------------------------------------------------------
+[debug] [2025-06-10T17:49:30.698Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js init
+[debug] [2025-06-10T17:49:30.699Z] : CLI Version:  1.18.1
+[debug] [2025-06-10T17:49:30.699Z] : Platform:     win32
+[debug] [2025-06-10T17:49:30.700Z] : Node Version: v22.14.0
+[debug] [2025-06-10T17:49:30.700Z] : Time:         Tue Jun 10 2025 23:19:30 GMT+0530 (India Standard Time)
+[debug] [2025-06-10T17:49:30.700Z] : ----------------------------------------------------------------------
+[debug] [2025-06-10T17:49:30.700Z] : 
+[debug] [2025-06-10T17:49:31.478Z] : > authorizing via signed-in user option
+[debug] [2025-06-10T17:49:31.480Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.projects.ALL","ZohoCatalyst.project.import.CREATE"]
+[info] [2025-06-10T17:49:31.521Z] : 
+      ___  
+      \  \     ____           _             _                 _   
+   ___ \  \   / ___|   __ _  | |_    __ _  | |  _   _   ___  | |_ 
+  /  / /  /  | |      / _` | | __|  / _` | | | | | | | / __| | __|
+ /  / /__/   | |___  | (_| | | |_  | (_| | | | | |_| | \__ \ | |_ 
+ \  \         \____|  \__,_|  \__|  \__,_| |_|  \__, | |___/  \__|
+  \__\                                          |___/       
+
+You're about to initialize a Catalyst project in this directory:
+
+  C:\Users\ASUS\Downloads\foodOrder-app-main (1)\foodOrder-app-main\foodOrder\foodOrder\Deployment
+
+[debug] [2025-06-10T17:49:31.555Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/orgs 
+
+[debug] [2025-06-10T17:49:32.558Z] : <<<< HTTP RESPONSE : 500
+Response Headers: {"server":"ZGS","date":"Tue, 10 Jun 2025 17:49:32 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-06-10T17:49:32.563Z] : Response Body : {"status":"failure","data":{"message":"Internal server error has occurred. Please try again after some time","error_code":"INTERNAL_SERVER_ERROR"}}
+
+[debug] [2025-06-10T17:49:32.574Z] : CatalystError: HTTP Error: 500, Internal server error has occurred. Please try again after some time
+    at exports.default (C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorResponse.js:25:12)
+    at API._parseResponse (C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:159:60)
+    at API.<anonymous> (C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:242:38)
+    at Generator.next (<anonymous>)
+    at C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:31:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:27:12)
+    at Request.<anonymous> (C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:240:53)
+    at Request.emit (node:events:530:35)
+    at Request.<anonymous> (C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\request\request.js:1154:10) {
+  status: 500,
+  exit: 2,
+  original: undefined,
+  context: {
+    body: { status: 'failure', data: [Object] },
+    response: IncomingMessage {
+      _events: [Object],
+      _readableState: [ReadableState],
+      _maxListeners: undefined,
+      socket: null,
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [Array],
+      rawTrailers: [],
+      joinDuplicateHeaders: undefined,
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 500,
+      statusMessage: '',
+      client: [TLSSocket],
+      _consuming: false,
+      _dumped: false,
+      req: [ClientRequest],
+      _eventsCount: 4,
+      request: [Request],
+      toJSON: [Function: responseToJSON],
+      caseless: [Caseless],
+      body: [Object],
+      [Symbol(shapeMode)]: true,
+      [Symbol(kCapture)]: false,
+      [Symbol(kHeaders)]: [Object],
+      [Symbol(kHeadersCount)]: 28,
+      [Symbol(kTrailers)]: null,
+      [Symbol(kTrailersCount)]: 0
+    }
+  },
+  errorId: undefined,
+  arg: undefined,
+  skipHelp: false,
+  fileName: 'C:\\Users\\ASUS\\AppData\\Roaming\\npm\\node_modules\\zcatalyst-cli\\lib\\errorResponse'
+}
+[error] [2025-06-10T17:49:32.579Z] : × HTTP Error: 500, Internal server error has occurred. Please try again after some time
+[debug] [2025-06-10T17:49:32.580Z] : Error Stack: CatalystError: HTTP Error: 500, Internal server error has occurred. Please try again after some time
+    at exports.default (C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorResponse.js:25:12)
+    at API._parseResponse (C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:159:60)
+    at API.<anonymous> (C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:242:38)
+    at Generator.next (<anonymous>)
+    at C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:31:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:27:12)
+    at Request.<anonymous> (C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:240:53)
+    at Request.emit (node:events:530:35)
+    at Request.<anonymous> (C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\request\request.js:1154:10)
+[debug] [2025-06-10T17:49:32.581Z] : Error Context: {
+  "body": {
+    "status": "failure",
+    "data": {
+      "message": "Internal server error has occurred. Please try again after some time",
+      "error_code": "INTERNAL_SERVER_ERROR"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "status": "failure",
+      "data": {
+        "message": "Internal server error has occurred. Please try again after some time",
+        "error_code": "INTERNAL_SERVER_ERROR"
+      }
+    },
+    "headers": {
+      "server": "ZGS",
+      "date": "Tue, 10 Jun 2025 17:49:32 GMT",
+      "content-type": "application/vnd.catalyst.v2+json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "set-cookie": [
+        "zalb_46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/; Secure; HttpOnly",
+        "ZD_CSRF_TOKEN=e6335f7a-e1b9-412e-9ef0-3673176003b1;path=/;SameSite=None;Secure;priority=high",
+        "_zcsr_tmp=e6335f7a-e1b9-412e-9ef0-3673176003b1;path=/;SameSite=Strict;Secure;priority=high"
+      ],
+      "x-content-type-options": "nosniff",
+      "cache-control": "private,no-cache,no-store,max-age=0,must-revalidate",
+      "pragma": "no-cache",
+      "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
+      "x-frame-options": "DENY",
+      "strict-transport-security": "max-age=64072000; includeSubDomains; preload"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "api.catalyst.zoho.com",
+        "port": 443,
+        "hostname": "api.catalyst.zoho.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/baas/v1/orgs",
+        "path": "/baas/v1/orgs",
+        "href": "https://api.catalyst.zoho.com/baas/v1/orgs"
+      },
+      "method": "GET"
+    }
+  }
+}
+[debug] [2025-06-10T17:49:32.581Z] : Error Status: 500
+[info] [2025-06-10T17:49:32.581Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[debug] [2025-06-10T17:49:32.582Z] : EXEC ENDED with event: init, message: success
+[debug] [2025-06-10T17:49:32.583Z] : TOTAL DURATION OF COMMAND EXEC : 1146
+[debug] [2025-06-10T17:49:32.584Z] : Unable to initialise the log API
+[debug] [2025-06-10T17:51:25.882Z] : 
+[debug] [2025-06-10T17:51:25.895Z] : ----------------------------------------------------------------------
+[debug] [2025-06-10T17:51:25.896Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js init
+[debug] [2025-06-10T17:51:25.897Z] : CLI Version:  1.18.1
+[debug] [2025-06-10T17:51:25.898Z] : Platform:     win32
+[debug] [2025-06-10T17:51:25.898Z] : Node Version: v22.14.0
+[debug] [2025-06-10T17:51:25.899Z] : Time:         Tue Jun 10 2025 23:21:25 GMT+0530 (India Standard Time)
+[debug] [2025-06-10T17:51:25.899Z] : ----------------------------------------------------------------------
+[debug] [2025-06-10T17:51:25.900Z] : 
+[debug] [2025-06-10T17:51:26.742Z] : > authorizing via signed-in user option
+[debug] [2025-06-10T17:51:26.743Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.projects.ALL","ZohoCatalyst.project.import.CREATE"]
+[info] [2025-06-10T17:51:26.781Z] : 
+      ___  
+      \  \     ____           _             _                 _   
+   ___ \  \   / ___|   __ _  | |_    __ _  | |  _   _   ___  | |_ 
+  /  / /  /  | |      / _` | | __|  / _` | | | | | | | / __| | __|
+ /  / /__/   | |___  | (_| | | |_  | (_| | | | | |_| | \__ \ | |_ 
+ \  \         \____|  \__,_|  \__|  \__,_| |_|  \__, | |___/  \__|
+  \__\                                          |___/       
+
+You're about to initialize a Catalyst project in this directory:
+
+  C:\Users\ASUS\Downloads\foodOrder-app-main (1)\foodOrder-app-main\foodOrder\foodOrder\Deployment
+
+[debug] [2025-06-10T17:51:26.815Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/orgs 
+
+[debug] [2025-06-10T17:51:27.913Z] : <<<< HTTP RESPONSE : 500
+Response Headers: {"server":"ZGS","date":"Tue, 10 Jun 2025 17:51:28 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-06-10T17:51:27.917Z] : Response Body : {"status":"failure","data":{"message":"Internal server error has occurred. Please try again after some time","error_code":"INTERNAL_SERVER_ERROR"}}
+
+[debug] [2025-06-10T17:51:27.925Z] : CatalystError: HTTP Error: 500, Internal server error has occurred. Please try again after some time
+    at exports.default (C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorResponse.js:25:12)
+    at API._parseResponse (C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:159:60)
+    at API.<anonymous> (C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:242:38)
+    at Generator.next (<anonymous>)
+    at C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:31:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:27:12)
+    at Request.<anonymous> (C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:240:53)
+    at Request.emit (node:events:530:35)
+    at Request.<anonymous> (C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\request\request.js:1154:10) {
+  status: 500,
+  exit: 2,
+  original: undefined,
+  context: {
+    body: { status: 'failure', data: [Object] },
+    response: IncomingMessage {
+      _events: [Object],
+      _readableState: [ReadableState],
+      _maxListeners: undefined,
+      socket: null,
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [Array],
+      rawTrailers: [],
+      joinDuplicateHeaders: undefined,
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 500,
+      statusMessage: '',
+      client: [TLSSocket],
+      _consuming: false,
+      _dumped: false,
+      req: [ClientRequest],
+      _eventsCount: 4,
+      request: [Request],
+      toJSON: [Function: responseToJSON],
+      caseless: [Caseless],
+      body: [Object],
+      [Symbol(shapeMode)]: true,
+      [Symbol(kCapture)]: false,
+      [Symbol(kHeaders)]: [Object],
+      [Symbol(kHeadersCount)]: 28,
+      [Symbol(kTrailers)]: null,
+      [Symbol(kTrailersCount)]: 0
+    }
+  },
+  errorId: undefined,
+  arg: undefined,
+  skipHelp: false,
+  fileName: 'C:\\Users\\ASUS\\AppData\\Roaming\\npm\\node_modules\\zcatalyst-cli\\lib\\errorResponse'
+}
+[error] [2025-06-10T17:51:27.927Z] : × HTTP Error: 500, Internal server error has occurred. Please try again after some time
+[debug] [2025-06-10T17:51:27.928Z] : Error Stack: CatalystError: HTTP Error: 500, Internal server error has occurred. Please try again after some time
+    at exports.default (C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorResponse.js:25:12)
+    at API._parseResponse (C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:159:60)
+    at API.<anonymous> (C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:242:38)
+    at Generator.next (<anonymous>)
+    at C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:31:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:27:12)
+    at Request.<anonymous> (C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:240:53)
+    at Request.emit (node:events:530:35)
+    at Request.<anonymous> (C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\request\request.js:1154:10)
+[debug] [2025-06-10T17:51:27.929Z] : Error Context: {
+  "body": {
+    "status": "failure",
+    "data": {
+      "message": "Internal server error has occurred. Please try again after some time",
+      "error_code": "INTERNAL_SERVER_ERROR"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "status": "failure",
+      "data": {
+        "message": "Internal server error has occurred. Please try again after some time",
+        "error_code": "INTERNAL_SERVER_ERROR"
+      }
+    },
+    "headers": {
+      "server": "ZGS",
+      "date": "Tue, 10 Jun 2025 17:51:28 GMT",
+      "content-type": "application/vnd.catalyst.v2+json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "set-cookie": [
+        "zalb_46512fd555=b14009a6059feb83ee8aa1c715a015c5; Path=/; Secure; HttpOnly",
+        "ZD_CSRF_TOKEN=c5c2f1e0-da03-48ad-9848-5dfb1fe29a5f;path=/;SameSite=None;Secure;priority=high",
+        "_zcsr_tmp=c5c2f1e0-da03-48ad-9848-5dfb1fe29a5f;path=/;SameSite=Strict;Secure;priority=high"
+      ],
+      "x-content-type-options": "nosniff",
+      "cache-control": "private,no-cache,no-store,max-age=0,must-revalidate",
+      "pragma": "no-cache",
+      "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
+      "x-frame-options": "DENY",
+      "strict-transport-security": "max-age=64072000; includeSubDomains; preload"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "api.catalyst.zoho.com",
+        "port": 443,
+        "hostname": "api.catalyst.zoho.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/baas/v1/orgs",
+        "path": "/baas/v1/orgs",
+        "href": "https://api.catalyst.zoho.com/baas/v1/orgs"
+      },
+      "method": "GET"
+    }
+  }
+}
+[debug] [2025-06-10T17:51:27.930Z] : Error Status: 500
+[info] [2025-06-10T17:51:27.930Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[debug] [2025-06-10T17:51:27.931Z] : EXEC ENDED with event: init, message: success
+[debug] [2025-06-10T17:51:27.931Z] : TOTAL DURATION OF COMMAND EXEC : 1209
+[debug] [2025-06-10T17:51:27.932Z] : Unable to initialise the log API
+[debug] [2025-06-10T17:52:22.085Z] : 
+[debug] [2025-06-10T17:52:22.089Z] : ----------------------------------------------------------------------
+[debug] [2025-06-10T17:52:22.090Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js init
+[debug] [2025-06-10T17:52:22.091Z] : CLI Version:  1.18.1
+[debug] [2025-06-10T17:52:22.091Z] : Platform:     win32
+[debug] [2025-06-10T17:52:22.091Z] : Node Version: v22.14.0
+[debug] [2025-06-10T17:52:22.092Z] : Time:         Tue Jun 10 2025 23:22:22 GMT+0530 (India Standard Time)
+[debug] [2025-06-10T17:52:22.092Z] : ----------------------------------------------------------------------
+[debug] [2025-06-10T17:52:22.092Z] : 
+[debug] [2025-06-10T17:52:22.797Z] : > authorizing via signed-in user option
+[debug] [2025-06-10T17:52:22.798Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.projects.ALL","ZohoCatalyst.project.import.CREATE"]
+[info] [2025-06-10T17:52:22.828Z] : 
+      ___  
+      \  \     ____           _             _                 _   
+   ___ \  \   / ___|   __ _  | |_    __ _  | |  _   _   ___  | |_ 
+  /  / /  /  | |      / _` | | __|  / _` | | | | | | | / __| | __|
+ /  / /__/   | |___  | (_| | | |_  | (_| | | | | |_| | \__ \ | |_ 
+ \  \         \____|  \__,_|  \__|  \__,_| |_|  \__, | |___/  \__|
+  \__\                                          |___/       
+
+You're about to initialize a Catalyst project in this directory:
+
+  C:\Users\ASUS\Downloads\foodOrder-app-main (1)\foodOrder-app-main\foodOrder\foodOrder\Deployment
+
+[debug] [2025-06-10T17:52:22.857Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/orgs 
+
+[debug] [2025-06-10T17:52:23.905Z] : <<<< HTTP RESPONSE : 500
+Response Headers: {"server":"ZGS","date":"Tue, 10 Jun 2025 17:52:24 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-06-10T17:52:23.908Z] : Response Body : {"status":"failure","data":{"message":"Internal server error has occurred. Please try again after some time","error_code":"INTERNAL_SERVER_ERROR"}}
+
+[debug] [2025-06-10T17:52:23.914Z] : CatalystError: HTTP Error: 500, Internal server error has occurred. Please try again after some time
+    at exports.default (C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorResponse.js:25:12)
+    at API._parseResponse (C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:159:60)
+    at API.<anonymous> (C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:242:38)
+    at Generator.next (<anonymous>)
+    at C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:31:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:27:12)
+    at Request.<anonymous> (C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:240:53)
+    at Request.emit (node:events:530:35)
+    at Request.<anonymous> (C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\request\request.js:1154:10) {
+  status: 500,
+  exit: 2,
+  original: undefined,
+  context: {
+    body: { status: 'failure', data: [Object] },
+    response: IncomingMessage {
+      _events: [Object],
+      _readableState: [ReadableState],
+      _maxListeners: undefined,
+      socket: null,
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [Array],
+      rawTrailers: [],
+      joinDuplicateHeaders: undefined,
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 500,
+      statusMessage: '',
+      client: [TLSSocket],
+      _consuming: false,
+      _dumped: false,
+      req: [ClientRequest],
+      _eventsCount: 4,
+      request: [Request],
+      toJSON: [Function: responseToJSON],
+      caseless: [Caseless],
+      body: [Object],
+      [Symbol(shapeMode)]: true,
+      [Symbol(kCapture)]: false,
+      [Symbol(kHeaders)]: [Object],
+      [Symbol(kHeadersCount)]: 28,
+      [Symbol(kTrailers)]: null,
+      [Symbol(kTrailersCount)]: 0
+    }
+  },
+  errorId: undefined,
+  arg: undefined,
+  skipHelp: false,
+  fileName: 'C:\\Users\\ASUS\\AppData\\Roaming\\npm\\node_modules\\zcatalyst-cli\\lib\\errorResponse'
+}
+[error] [2025-06-10T17:52:23.917Z] : × HTTP Error: 500, Internal server error has occurred. Please try again after some time
+[debug] [2025-06-10T17:52:23.918Z] : Error Stack: CatalystError: HTTP Error: 500, Internal server error has occurred. Please try again after some time
+    at exports.default (C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorResponse.js:25:12)
+    at API._parseResponse (C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:159:60)
+    at API.<anonymous> (C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:242:38)
+    at Generator.next (<anonymous>)
+    at C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:31:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:27:12)
+    at Request.<anonymous> (C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:240:53)
+    at Request.emit (node:events:530:35)
+    at Request.<anonymous> (C:\Users\ASUS\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\request\request.js:1154:10)
+[debug] [2025-06-10T17:52:23.918Z] : Error Context: {
+  "body": {
+    "status": "failure",
+    "data": {
+      "message": "Internal server error has occurred. Please try again after some time",
+      "error_code": "INTERNAL_SERVER_ERROR"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "status": "failure",
+      "data": {
+        "message": "Internal server error has occurred. Please try again after some time",
+        "error_code": "INTERNAL_SERVER_ERROR"
+      }
+    },
+    "headers": {
+      "server": "ZGS",
+      "date": "Tue, 10 Jun 2025 17:52:24 GMT",
+      "content-type": "application/vnd.catalyst.v2+json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "set-cookie": [
+        "zalb_46512fd555=c3d5ec374d3dc932973a3d50f55d8d00; Path=/; Secure; HttpOnly",
+        "ZD_CSRF_TOKEN=5724e547-7b38-4c98-bfa4-1489521418ff;path=/;SameSite=None;Secure;priority=high",
+        "_zcsr_tmp=5724e547-7b38-4c98-bfa4-1489521418ff;path=/;SameSite=Strict;Secure;priority=high"
+      ],
+      "x-content-type-options": "nosniff",
+      "cache-control": "private,no-cache,no-store,max-age=0,must-revalidate",
+      "pragma": "no-cache",
+      "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
+      "x-frame-options": "DENY",
+      "strict-transport-security": "max-age=64072000; includeSubDomains; preload"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "api.catalyst.zoho.com",
+        "port": 443,
+        "hostname": "api.catalyst.zoho.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/baas/v1/orgs",
+        "path": "/baas/v1/orgs",
+        "href": "https://api.catalyst.zoho.com/baas/v1/orgs"
+      },
+      "method": "GET"
+    }
+  }
+}
+[debug] [2025-06-10T17:52:23.918Z] : Error Status: 500
+[info] [2025-06-10T17:52:23.919Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[debug] [2025-06-10T17:52:23.920Z] : EXEC ENDED with event: init, message: success
+[debug] [2025-06-10T17:52:23.920Z] : TOTAL DURATION OF COMMAND EXEC : 1140
+[debug] [2025-06-10T17:52:23.922Z] : Unable to initialise the log API
